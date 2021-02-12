@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grbans Restaurant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/ico" href="images/Icons8-Windows-8-Food-Waiter.ico" />
+    <meta name="author" content="abu">
+    <meta name="keywords" content="restaurant, grbo, drink, food, relax, best place">
+    <meta name="description" content="the best restaurant to relax with your loved ones.">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" herf="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js" integrity="sha256-MMt0/21G3z0Zg4ET1kI3HC9npItDowkitRDVr0FhCxA=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik" rel="stylesheet">
+
+
+    <style>
+        .nav-link {
+            font-size: x-large;
+        }
+        
+        .navLinks:hover {
+            color: rgb(255, 255, 255) !important;
+        }
+        
+        .navLinks {
+            color: rgb(0, 7, 8) !important;
+        }
+        
+        .jumbotron {
+            background-image: url('images/');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        
+        #logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        
+        #header {
+            margin-top: 150px;
+            margin-bottom: 50px;
+        }
+        @media only screen and (min-width: 767px) {
+            #navbarNav{
+                margin-top: -100px
+            }
+        }
+    </style>
+
+</head>
+
+<body style="background-color:rgb(162, 110, 59);">
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <a href="index.html" class="navbar-brand"><img src="images/logo.jpg" id="logo" alt="logo" class="img-fluid" /></a>
+        <button type="button" class="navbar-toggler navbar-toggler-right " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expended="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link"><span class="navLinks"><i class="fa fa-home mx-1"></i>Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link"><span class="navLinks"><i class="fa fa-glass mx-1"></i>Menu</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link"><span class="navLinks"><i class="fa fa-address-book mx-1"></i>Contact
+                            & Place</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link"><span class="navLinks"><i class="fa fa-comments mx-1"></i>Feedback</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" data-toggle="modal" data-target="#modal" class="nav-link"><span class="navLinks"><i
+                                class="fa fa-sign-in mx-2"></i>Register</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-toggle="modal" data-target="#modalLog" class="nav-link"><span class="navLinks"><i
+                                class="fa fa-sign-in mx-2"></i>Login</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"><img src="images/logo.jpg" width="150" height="150" alt="logo" /><label class="h2 text-primary">Create an account</label></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xs-12">
+                        <input type="text" placeholder="Fist name..." class="form-control mb-3" id="firstName" />
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="text" placeholder="Last name..." class="form-control mb-3" id="lastName" />
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="email" placeholder="you@example.com" class="form-control mb-3"
+                            id="emailRegister" />
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="password" class="form-control" placeholder="Enter your password"
+                            id="passwordRegister" />
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <input type="button" class="btn btn-success" value="Sign up for free" id="registerButton" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLog" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"><img src="images/logo.jpg" width="150" height="150" alt="logo" /><label class="h2 text-primary">Login</label></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="col-xs-12">
+                            <input type="email" placeholder="you@example.com" class="form-control mb-3"
+                                id="emailLogin" />
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="password" class="form-control" placeholder="Enter your password"
+                                id="passwordLogin" />
+                        </div>
+                        <div class="col-xs-12 text-center">
+                            <input type="button" class="btn btn-success" value="Login" id="loginButton" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="row no-gutters">
+            <div class="col-12">
+                <h2 class="display-4 text-center text-primary" id="header">CONTACT & LOCATION</h2>
+            </div>
+            <div class="col-12 text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d11513.04872439917!2d18.34079575!3d43.829661449999996!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sba!4v1518959248651" width="600" height="450" frameborder="0" style="border:0; border-radius:5%;"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-12">
+                <h3 class="text-center text-primary">CONTACT:</h3>
+            </div>
+            <div class="col-md-2 col-7 offset-5">
+                <span style="margin-right:80px;">Restaurant:</span><br />
+
+                <span style="margin-right:117px;">Email:</span>
+            </div>
+            <div class="col-md-4 col-8 offset-4 offset-md-0">
+                <i class="fa fa-phone fa-fw" aria-hidden="true"></i><a href="tel:+38761091675" style="text-decoration: none">(061)
+                    826-366</a><br>
+
+                <i class="fa fa-inbox fa-fw" aria-hidden="true"></i><a href="mailto:grbo_nedzad@hotmail.com" style="text-decoration: none">grbo_nedzad@hotmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script src="js/login.js"></script>
+  <script src="js/register.js"></script>
+</body>
+
+</html>
